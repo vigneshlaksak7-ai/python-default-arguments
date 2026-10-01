@@ -1,0 +1,23 @@
+# Program to demonstrate Default Arguments
+
+def calculate_bill(item, price, quantity=1):
+    total = price * quantity
+
+    print("Item:", item)
+    print("Price:", price)
+    print("Quantity:", quantity)
+    print("Total Bill:", total)
+    print("--------------------")
+
+
+# Using the default quantity
+calculate_bill("Laptop", 50000)
+
+# Providing a different quantity
+calculate_bill("Mouse", 800, 2)
+
+# Using the default quantity again
+calculate_bill("Keyboard", 1500)
+
+# Providing a different quantity
+calculate_bill("Headphone", 2000, 3)
